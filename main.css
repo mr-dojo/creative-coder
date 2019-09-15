@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color: #E6E6E6;
+}
+
+nav,
+footer {
+  padding: 5px;
+  background-color: #CCCCCC;
+}
+
+header {
+  padding: 50px;
+  background-color: #E6E6E6;
+}
+
+section {
+  min-height: 250px;
+  padding: 10%;
+}
+
+.about-me {
+  padding: 30px;
+  background-color: #B3B3B3;
+}
+
+.projects {
+  padding: 30px;
+  background-color: #808080;
+}
+
+.contact {
+  padding: 30px;
+  background-color: #B3B3B3;
+}
+
+

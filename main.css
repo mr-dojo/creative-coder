@@ -17,9 +17,21 @@ footer {
   background-color: #CCCCCC;
 }
 
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.icon {
+  max-width: 50px;
+}
+
 header {
   padding: 50px;
-  background-color: #E6E6E6;
 }
 
 section {
@@ -34,12 +46,12 @@ section {
 
 .projects {
   padding: 30px;
-  background-color: #808080;
+  background-color: #CCCCCC;
 }
 
 .contact {
   padding: 30px;
-  background-color: #B3B3B3;
+  background-color:#B3B3B3;
 }
 
 

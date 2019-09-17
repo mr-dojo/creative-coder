@@ -19,7 +19,6 @@ a:hover {
   cursor: pointer;
 }
 
-
 ul {
   list-style: none;
   display: flex;
@@ -37,7 +36,7 @@ footer {
 nav {
   position: fixed;
   width: 100%;
-  
+  border-bottom:  3px solid #F2F2F2;
 }
 
 img {
@@ -51,24 +50,46 @@ header {
 
 p.header-text {
   margin-top: 30px;
+  
+}
+
+#sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1, h2, h3 {
   text-align: center;
+  font-family: Georgia, serif;
 }
 
 section {
-  min-height: 250px;
   padding: 10%;
 }
 
 h2 {
-  visibility: hidden;
-  height: 0px;
+  margin: 20px 0px;
+  font-weight: bold;
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p.project-description {
+  margin-top: 30px;
 }
 
 p.bio-text2 {
   margin-top: 30px;
+}
+
+footer.footer {
+  display: flex;
+  justify-content: space-around;
+  border-top:  3px solid #F2F2F2;
 }
 
 .icon {
@@ -79,9 +100,8 @@ p.bio-text2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 30px 0px;
 }
-
-
 
 .about-me {
   padding: 30px;
@@ -90,7 +110,8 @@ p.bio-text2 {
 
 .projects {
   padding: 30px;
-  background-color: #FFFFFF;
+  background-color: #B3FFEE;
+  margin-bottom: 30px;
 }
 
 .contact {
@@ -98,6 +119,44 @@ p.bio-text2 {
   background-color:#FFFFFF;
 }
 
+@media only screen and (min-width: 600px) {
+  img.hero-img {
+    max-width: 600px;
+  }
+
+  section {
+    max-width: 600px;
+    border: 3px solid #F2F2F2;
+    border-radius: 5px;
+  }
+
+  #contact {
+    border: 0;
+  }
+
+  .contact-container {
+    align-items: center;
+  }
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  #sections {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+
+  nav {
+    visibility: hidden;
+    height: 0px;
+  }
+
+  header.hero {
+    padding-top: 0px;
+  }
+
+}
 
 
 

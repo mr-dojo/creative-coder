@@ -7,40 +7,66 @@
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
   </head>
   <body>
-    <nav class="nav-bar" roll="navigation">Navagation Links</nav>
+    <nav class="nav-bar" roll="navigation">
+      <ul>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <main roll="main">
       <header class="hero" roll="banner">
-        <img class="hero-img">
         <h1>Aloha</h1>
-        <p class="header-text">I’m Carlo. I’m a fullstack web engineer with a focus on <strong>creative</strong>, front end development.</p>
+        <img class="hero-img" src="images/heroImageForPortfolio.JPG" alt="smiling man wearing hat in front of mountains">
+        <p class="header-text">I’m Carlo. I’m a fullstack web engineer with a focus 
+          on <strong>creative</strong>, front end development.</p>
       </header>
-      
-      <section class="about-me">
-        <h2>About Me</h2>
-        <p>I am a recent graduate of the Engineering Flex program at Thinkful and avid tech enthusiast.
-           Programming has become my life as I find immense joy from solving problems and understanding new technologies. 
-           The thrill of finding answers to questions drives me to be continually learning and perfecting my skills as a software engineer. 
-           There is no better feeling than having an ambitious idea and bringing it to fruition.</p>
-        <p>When I’m not coding, I am generally painting or hiking in the wilderness. I love learning and often listen to podcasts about AI, 
-          futurism, neuroscience and other existential topics.</p>
-      </section>
-      
-      <section class="projects">
-        <h2>Projects</h2>
-        <h3>A Star Wars Quiz</h3>
-        <p>This app tests your knowledge of the Star Wars universe so you can blow your friends away with useless factoids. 
-          It gives you constructive feedback on your answers to help you get first place at your all important trivia nights.</p>
-
-      </section>
-      
-      <section class="contact">
-        <p>Contact Me</p>
-      </section>
-      
+      <div id="sections" class="sections-container">
+        <div class="about-container">
+          <h2>About</h2>
+          <section id="about" class="about-me">
+            <p class="bio-text1">I am a recent graduate of the Engineering Flex program at Thinkful 
+              and avid tech enthusiast. Programming has become my life as I find 
+              immense joy from solving problems and understanding new technologies. 
+              The thrill of finding answers to questions drives me to be continually 
+              learning and perfecting my skills as a software engineer. 
+              There is no better feeling than having an ambitious idea and bringing 
+              it to fruition.</p>
+            <p class="bio-text2">When I’m not coding, I am generally painting or hiking in the wilderness.
+              I love learning and often listen to podcasts about AI, 
+              futurism, neuroscience and other existential topics.</p>
+          </section>
+        </div>
+        <div class="projects-container">
+          <h2>Projects</h2>
+          <section id="projects" class="projects">
+            <h3>Star Wars Quiz App</h3>
+            <div class="github-repo">
+              <a class="icon-link" href="https://github.com/CarloCostantino/noob-jedi" target="_blank"><span class="icon-tag">Repo</span><img class="icon" src="images/gitHubIcon.png" alt="GitHub logo"></a>
+            </div>
+            <div class="used-tech">
+              <p></p>
+            </div>
+            <p class="project-description">This app tests your knowledge of the Star Wars universe so you can 
+              blow your friends away with useless factoids. It gives you 
+              constructive feedback on your answers to help you get first place 
+              at your all important trivia nights.</p>
+            <a class="icon-link" href="https://carlocostantino.github.io/noob-jedi/" target="_blank"><span class="icon-tag">Live Page</span><img class="project-img" src="images/starWarsLogo.png" alt="Star Wars text logo"></a>
+          </section>
+        </div>
+      </div>
+      <!-- <div class="contact-container">
+        <h2>Contact</h2>
+        <section id="contact" class="contact">
+          <a class="icon-link" href ="mailto: costantinoart@gmail.com" target="_blank"><span class="icon-tag">Email Me</span><img class="icon" alt="mail icon" src="images/emailAddressLogo.png"></a>
+        </section>
+      </div> -->
     </main>
     
     <footer roll="content-info" class="footer">
-      <p>Links to GitHub, Linkedin, etc.</p>
+      <a class="icon-link" href="https://github.com/CarloCostantino" target="_blank"><span class="icon-tag">GitHub</span><img class="icon" alt="GitHub logo" src="images/gitHubIcon.png"></a>
+      <a id="contact" class="icon-link" href ="mailto: costantinoart@gmail.com" target="_blank"><span class="icon-tag">Email Me</span><img class="icon" alt="mail icon" src="images/emailAddressLogo.png"></a>
+      <a class="icon-link" href="https://www.linkedin.com/in/carlo-costantino7/" target="_blank"><span class="icon-tag">Linkedin</span><img class="icon" alt="Linkedin logo" src="images/linkedinIcon.png"></a>
     </footer>
 
   </body>

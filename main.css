@@ -5,33 +5,56 @@
 
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
   font-size: 20px;
   line-height: 1.5;
-  background-color: #E6E6E6;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
 }
 
 nav,
 footer {
   padding: 5px;
-  background-color: #CCCCCC;
+  background-color: #B3FFEE;
+  display: flex;
 }
 
 nav {
   position: fixed;
   width: 100%;
+  
 }
 
 img {
   width: 100%;
 }
 
-.icon {
-  max-width: 50px;
-}
-
 header {
   padding: 50px;
+  text-align: center;
+}
+
+p.header-text {
+  margin-top: 30px;
+}
+
+h1, h2, h3 {
+  text-align: center;
 }
 
 section {
@@ -39,19 +62,42 @@ section {
   padding: 10%;
 }
 
+h2 {
+  visibility: hidden;
+  height: 0px;
+}
+
+p.bio-text2 {
+  margin-top: 30px;
+}
+
+.icon {
+  max-width: 50px;
+}
+
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
 .about-me {
   padding: 30px;
-  background-color: #B3B3B3;
+  background-color: #B3FFEE;
 }
 
 .projects {
   padding: 30px;
-  background-color: #CCCCCC;
+  background-color: #FFFFFF;
 }
 
 .contact {
   padding: 30px;
-  background-color:#B3B3B3;
+  background-color:#FFFFFF;
 }
+
+
 
 

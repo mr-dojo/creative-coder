@@ -3,7 +3,7 @@ function handleNavClick() {
   $("a.nav-link").click(function() {
     let section = this.text
     let lowerCaseSection = section.toLowerCase();
-    renderNav();
+    renderNav(lowerCaseSection);
     renderContent(lowerCaseSection);
   })
 }
@@ -13,9 +13,12 @@ function renderContent(section) {
   $(`#${section}`).removeClass("hidden");
 }
 
-function renderNav() {
+function renderNav(section) {
+  $("a.nav-link").removeClass("selected")
+  $(`#${section}-button`).addClass("selected")
 // remove all other nav button effects
 // add nav button effect to pressed button
+
 }
 
 function startNav() {

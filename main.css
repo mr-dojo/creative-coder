@@ -31,7 +31,8 @@ ul {
 
 nav {
   width: 100%;
-  padding: 30px 10px 10px 10px;
+  padding: 10px;
+  height: 60px;
 }
 
 a.nav-link {
@@ -57,7 +58,7 @@ p.header-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 80vh;
+  min-height: calc(100vh - 120px);
 }
 
 h1, h2, h3 {

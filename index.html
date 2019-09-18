@@ -7,24 +7,24 @@
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
   </head>
   <body>
-    <nav class="nav-bar" roll="navigation">
-      <ul>
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <main roll="main">
+    <main class="content" roll="main">
       <header class="hero" roll="banner">
-        <h1>Aloha</h1>
+        <h1 class="header-text">Aloha</h1>
         <img class="hero-img" src="images/heroImageForPortfolio.JPG" alt="smiling man wearing hat in front of mountains">
         <p class="header-text">I’m Carlo. I’m a fullstack web engineer with a focus 
           on <strong>creative</strong>, front end development.</p>
       </header>
-      <div id="sections" class="sections-container">
-        <div class="about-container">
+      <nav id="nav" class="nav-bar" roll="navigation">
+        <ul>
+          <li><a class="nav-link" href="#nav">About</a></li>
+          <li><a class="nav-link" href="#nav">Projects</a></li>
+          <li><a class="nav-link" href="#nav">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="sections-container">
+        <div id="about" class="section-container hidden">
           <h2>About</h2>
-          <section id="about" class="about-me">
+          <section class="about-me">
             <p class="bio-text1">I am a recent graduate of the Engineering Flex program at Thinkful 
               and avid tech enthusiast. Programming has become my life as I find 
               immense joy from solving problems and understanding new technologies. 
@@ -37,9 +37,9 @@
               futurism, neuroscience and other existential topics.</p>
           </section>
         </div>
-        <div class="projects-container">
+        <div id="projects" class="section-container hidden">
           <h2>Projects</h2>
-          <section id="projects" class="projects">
+          <section class="projects">
             <h3>Star Wars Quiz App</h3>
             <div class="github-repo">
               <a class="icon-link" href="https://github.com/CarloCostantino/noob-jedi" target="_blank"><span class="icon-tag">Repo</span><img class="icon" src="images/gitHubIcon.png" alt="GitHub logo"></a>
@@ -55,6 +55,7 @@
           </section>
         </div>
       </div>
+      <div class="push"></div>
       <!-- <div class="contact-container">
         <h2>Contact</h2>
         <section id="contact" class="contact">

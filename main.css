@@ -10,6 +10,9 @@ body {
   background-color: #FFFFFF;
 }
 
+.content {
+  min-height: calc(100vh - 60px);
+}
 a {
   text-decoration: none;
   color: black;
@@ -26,17 +29,16 @@ ul {
   padding: 0px;
 }
 
-nav,
-footer {
-  padding: 5px;
-  background-color: #B3FFEE;
-  display: flex;
-}
-
 nav {
-  position: fixed;
   width: 100%;
   border-bottom:  3px solid #F2F2F2;
+  display: flex;
+  padding: 10px 10px;
+}
+
+a.nav-link {
+  font-size: 25px;
+  padding: 10px;
 }
 
 img {
@@ -44,7 +46,7 @@ img {
 }
 
 header {
-  padding: 50px;
+  padding: 0px 50px 50px 50px;
   text-align: center;
 }
 
@@ -53,7 +55,7 @@ p.header-text {
   
 }
 
-#sections {
+.section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,6 +68,11 @@ h1, h2, h3 {
 
 section {
   padding: 10%;
+}
+
+h1.header-text {
+  padding: 50px;
+  margin: 0px;
 }
 
 h2 {
@@ -88,19 +95,25 @@ p.bio-text2 {
 
 footer.footer {
   display: flex;
+  height: 60px;
   justify-content: space-around;
   border-top:  3px solid #F2F2F2;
 }
 
 .icon {
-  max-width: 50px;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.icon-tag {
+  font-size: 14px;
 }
 
 .icon-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0px;
+  margin: 0;
 }
 
 .about-me {
@@ -119,6 +132,10 @@ footer.footer {
   background-color:#FFFFFF;
 }
 
+.hidden {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
   img.hero-img {
     max-width: 600px;
@@ -129,15 +146,6 @@ footer.footer {
     border: 3px solid #F2F2F2;
     border-radius: 5px;
   }
-
-  #contact {
-    border: 0;
-  }
-
-  .contact-container {
-    align-items: center;
-  }
-  
 }
 
 @media only screen and (min-width: 1200px) {
@@ -145,15 +153,6 @@ footer.footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: baseline;
-  }
-
-  nav {
-    visibility: hidden;
-    height: 0px;
-  }
-
-  header.hero {
-    padding-top: 0px;
   }
 
 }

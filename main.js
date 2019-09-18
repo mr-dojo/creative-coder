@@ -10,7 +10,9 @@ function handleNavClick() {
 
 function renderContent(section) {
   $(".section-container").addClass("hidden")
+  $(".section-container").removeClass("show")
   $(`#${section}`).removeClass("hidden");
+  $(`#${section}`).addClass("show");
 }
 
 function renderNav(section) {
@@ -23,6 +25,6 @@ function renderNav(section) {
 
 function startNav() {
   handleNavClick();
-}
+};
 
 $(startNav);

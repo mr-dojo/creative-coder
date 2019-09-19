@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   line-height: 1.5;
   background-color: #FFFFFF;
@@ -45,13 +45,23 @@ img {
 }
 
 header {
-  padding: 0px 50px 50px 50px;
-  text-align: center;
+  text-align: left;
+  background-image: url("images/heroImageForPortfolio.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -300px center;
+  min-height: 300px;
+  margin-bottom: 40px;
 }
 
 p.header-text {
-  margin-top: 30px;
-  
+  max-width: 65%;
+  padding: 0px 0px 30px 30px;
+}
+
+h1.header-text {
+  padding: 30px;
+  margin: 0px;
 }
 
 .section-container {
@@ -61,8 +71,9 @@ p.header-text {
 }
 
 h1, h3 {
-  text-align: center;
-  font-family: Georgia, serif;
+  text-align: left;
+  font-weight: bold;
+  
 }
 
 h2 {
@@ -80,10 +91,6 @@ section {
   padding: 10%;
 }
 
-h1.header-text {
-  padding: 50px;
-  margin: 0px;
-}
 
 h2 {
   margin: 20px 0px;
@@ -169,6 +176,11 @@ footer.footer {
   background-color: #B3FFEE;
 }
 
+@media only screen and (min-width: 374px) {
+  header {
+    background-position: center;
+  }
+
 @media only screen and (min-width: 600px) {
   img.hero-img {
     max-width: 600px;
@@ -179,6 +191,19 @@ footer.footer {
     border: 3px solid #F2F2F2;
     border-radius: 5px;
   }
+
+  h1.header-text {
+    padding: 50px 30px 30px 50px;
+    margin: 0px;
+  }
+
+  p.header-text {
+    max-width: 50%;
+    padding: 0px 0px 30px 50px;
+    
+  }
+
+
 
 }
 

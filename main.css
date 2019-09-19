@@ -4,12 +4,15 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.7;
   background-color: #FFFFFF;
 }
 
+.content {
+  min-height: calc(100vh - 60px);
+}
 a {
   text-decoration: none;
   color: black;
@@ -22,21 +25,19 @@ a:hover {
 ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0px;
 }
 
-nav,
-footer {
-  padding: 5px;
-  background-color: #B3FFEE;
-  display: flex;
+nav {
+  width: 100%;
+  padding: 10px;
+  height: 60px;
 }
 
-nav {
-  position: fixed;
-  width: 100%;
-  border-bottom:  3px solid #F2F2F2;
+a.nav-link {
+  font-size: 25px;
+  padding: 10px;
 }
 
 img {
@@ -44,29 +45,53 @@ img {
 }
 
 header {
-  padding: 50px;
-  text-align: center;
+  text-align: left;
+  background-image: url("images/heroImageForPortfolio.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -300px center;
+  min-height: 300px;
+  margin-bottom: 40px;
 }
 
 p.header-text {
-  margin-top: 30px;
+  max-width: 65%;
+  padding: 0px 0px 30px 30px;
+  color: #FFFFFF;
+}
+
+h1.header-text {
+  padding: 30px;
+  margin: 0px;
+}
+
+.section-container {
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+}
+
+h1, h3 {
+  text-align: left;
+  font-weight: bold;
   
 }
 
-#sections {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+h2 {
+  height: .5px;
+  text-indent: -99999px;
 }
 
-h1, h2, h3 {
-  text-align: center;
-  font-family: Georgia, serif;
+h3 {
+  margin-bottom: 30px;
 }
+
+
 
 section {
   padding: 10%;
 }
+
 
 h2 {
   margin: 20px 0px;
@@ -76,9 +101,41 @@ h2 {
 
 h3 {
   font-size: 25px;
+  margin-bottom: 20px;
 }
 
 p.project-description {
+  margin: 30px 0px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a.link {
+  border:  3px solid #F2F2F2;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+p > span {
+  border:  3px solid #FFFFFF;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  line-height: 3;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.project-tech {
+  text-align: center;
+}
+
+img.project-img {
   margin-top: 30px;
 }
 
@@ -88,35 +145,65 @@ p.bio-text2 {
 
 footer.footer {
   display: flex;
-  justify-content: space-around;
-  border-top:  3px solid #F2F2F2;
+  height: 60px;
+  justify-content: space-evenly;
 }
 
 .icon {
-  max-width: 50px;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.icon-tag {
+  font-size: 14px;
 }
 
 .icon-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0px;
+  margin: 0;
 }
 
 .about-me {
   padding: 30px;
   background-color: #B3FFEE;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .projects {
   padding: 30px;
   background-color: #B3FFEE;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact {
-  padding: 30px;
-  background-color:#FFFFFF;
+#project-name {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.selected {
+  border:  3px solid #F2F2F2;
+  background-color: #B3FFEE;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 374px) {
+  header {
+    background-position: center;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -130,14 +217,19 @@ footer.footer {
     border-radius: 5px;
   }
 
-  #contact {
-    border: 0;
+  h1.header-text {
+    padding: 50px 30px 30px 50px;
+    margin: 0px;
   }
 
-  .contact-container {
-    align-items: center;
+  p.header-text {
+    max-width: 50%;
+    padding: 0px 0px 30px 50px;
+    
   }
-  
+
+
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -147,16 +239,4 @@ footer.footer {
     align-items: baseline;
   }
 
-  nav {
-    visibility: hidden;
-    height: 0px;
-  }
-
-  header.hero {
-    padding-top: 0px;
-  }
-
 }
-
-
-

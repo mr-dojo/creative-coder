@@ -106,7 +106,7 @@ p.bio-text2 {
 footer.footer {
   display: flex;
   height: 60px;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .icon {

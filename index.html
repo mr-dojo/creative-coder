@@ -2,25 +2,32 @@
 <html lang="en">
   <head>
     <title>Carlo Costantino Portfolio</title>
-    <meta name="viewport" content="width=divice-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <main class="content" roll="main">
-      <header class="hero" roll="banner">
+    <main class="content">
+      <header class="hero">
         <h1 class="header-text">Aloha</h1>
         <p class="header-text">I’m Carlo. I’m a fullstack web engineer with a focus 
           on <strong>creative</strong>, front end development.</p>
       </header>
-      <nav id="nav" class="nav-bar" roll="navigation">
+      <nav id="nav" class="nav-bar">
         <ul>
-          <li><a id="about-button" class="nav-link" href="#nav">About</a></li>
+          <li><a id="about-button" class="nav-link selected" href="#nav">About</a></li>
           <li><a id="projects-button" class="nav-link" href="#nav">Projects</a></li>
         </ul>
       </nav>
       <div class="sections-container">
-        <div id="about" class="section-container hidden">
+        <div id="about" class="section-container show">
           <h2>About</h2>
           <section class="about-me">
             <h3>My name is Carlo</h3>
@@ -29,7 +36,7 @@
               immense joy from solving problems and understanding new technologies. 
               The thrill of finding answers to questions drives me to be continually 
               learning and perfecting my skills as a software engineer. 
-              I'm excited to work with a team of talented people that can learn and tackel 
+              I'm excited to work with a team of talented people that can learn and tackle 
               ambitious projects together.</p>
             <p class="bio-text2">When I’m not coding, I am generally painting or hiking in the wilderness. 
               I love learning and often listen to podcasts about AI, 
@@ -64,9 +71,9 @@
       crossorigin="anonymous"></script>
     <script src="main.js"></script>
     
-    <footer roll="content-info" class="footer">
+    <footer class="footer">
       <a class="icon-link" href="https://github.com/CarloCostantino" target="_blank"><img class="icon" alt="GitHub logo" src="images/gitHubIcon.png"></a>
-      <a id="contact" class="icon-link" href ="mailto: costantinoart@gmail.com" target="_blank"><img class="icon" alt="mail icon" src="images/emailAddressLogo.png"></a>
+      <a id="contact" class="icon-link" href="mailto: costantinoart@gmail.com" target="_blank"><img class="icon" alt="mail icon" src="images/emailAddressLogo.png"></a>
       <a class="icon-link" href="https://www.linkedin.com/in/carlo-costantino7/" target="_blank"><img class="icon" alt="Linkedin logo" src="images/linkedinIcon.png"></a>
     </footer>
 

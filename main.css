@@ -180,7 +180,9 @@ img {
 }
 
 img.project-img {
-  margin-top: 30px;
+  margin: 30px 0;
+  width: 100%;
+  box-shadow: 0px 0 10px 0 rgba(0, 0, 0, 0.09);
 }
 
 img.icon {
@@ -241,6 +243,11 @@ img.icon {
   section {
     max-width: 600px;
     border-radius: 5px;
+    margin: 0 15px;
+  }
+
+  section.about-me {
+    max-width: 1100px;
   }
 
   h1.header-text {
@@ -261,8 +268,9 @@ img.icon {
 @media only screen and (min-width: 1200px) {
   div.section-container {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: baseline;
+    flex-wrap: wrap;
   }
 
   div#about {

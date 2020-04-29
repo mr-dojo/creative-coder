@@ -5,9 +5,14 @@ function handleNavClick() {
     let lowerCaseSection = section.toLowerCase();
     renderNav(lowerCaseSection);
     renderContent(lowerCaseSection);
-    document.querySelector("a.nav-link").scrollIntoView({
-      behavior: "smooth",
-    });
+    if (lowerCaseSection === "projects") {
+      document
+        .querySelector("a.nav-link")
+        .scrollIntoView({ block: "start", inline: "nearest" });
+    }
+    if (lowerCaseSection === "about") {
+      window.scrollTo(0, 0);
+    }
   });
 }
 

@@ -4,9 +4,11 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
+  font-weight: normal;
   line-height: 1.7;
+  letter-spacing: 1.25px;
   background-color: #e9eeea;
 }
 
@@ -85,11 +87,12 @@ a {
 
 a.link {
   background-color: #e9eeea;
-  padding: 10px;
+  padding: 4px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 25px;
   width: 120px;
   text-align: center;
+  margin: 0 5px;
 }
 
 a.nav-link {
@@ -107,14 +110,18 @@ a.icon-link {
 h1,
 h3 {
   text-align: left;
-  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Anonymous Pro", monospace;
 }
 
 h2 {
   height: 0.5px;
   text-indent: -99999px;
   margin: 10px 0px;
-  font-weight: bold;
   font-size: 34px;
 }
 
@@ -158,6 +165,7 @@ p.bio-text2 {
 p > span {
   padding: 5px;
   margin: 5px;
+  border: 2px solid #e9eeea;
   border-radius: 5px;
   line-height: 3;
   font-size: 12px;

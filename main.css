@@ -39,7 +39,7 @@ header {
   background-image: url("images/heroImageForPortfolio.JPG");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -300px center;
+  background-position: -400px center;
   min-height: 300px;
 }
 
@@ -166,7 +166,8 @@ p.bio-text2 {
 }
 
 p > span {
-  padding: 5px;
+  display: inline-block;
+  padding: 5px 10px;
   margin: 5px;
   border: 2px solid #e9eeea;
   border-radius: 5px;
@@ -216,10 +217,6 @@ img.icon {
 }
 
 @media only screen and (min-width: 260px) {
-  header {
-    background-position: -300px center;
-  }
-
   p.header-text {
     max-width: 231.6px;
   }

@@ -142,7 +142,7 @@ h1.header-text {
   margin: 0px;
 }
 
-h3#project-name {
+h3.project-name {
   font-size: 34px;
   text-align: center;
 }

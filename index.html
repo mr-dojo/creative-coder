@@ -3,7 +3,7 @@
   <head>
     <title>Carlo Costantino Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -36,242 +36,143 @@
       href="favicon_package_v0.16/safari-pinned-tab.svg"
       color="#5bbad5"
     />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Get Title Font -->
+    <link rel="stylesheet" href="./BAVRO/webfont kit/stylesheet.css">
+    
+    <!-- Get Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
     <meta name="msapplication-TileColor" content="#00aba9" />
     <meta name="theme-color" content="#ffffff" />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
   </head>
   <body>
-    <main id="top">
-      <header class="hero shadow">
-        <h1 class="header-text">Aloha</h1>
-        <p class="header-text">
-          I’m Carlo. I’m a fullstack web engineer with a focus on
-          <strong>creative</strong>, front end development.
-        </p>
-      </header>
-      <nav id="nav" class="nav-bar">
-        <ul>
-          <li>
-            <a
-              id="about-button"
-              class="nav-link border-radius_left shadow selected"
+    <div>
+      <video
+      loop
+      preload
+      autoplay
+      muted
+      id="coverVideo"
+      poster="images/water_Still.jpg"
+      class="col s12 m12 l12 xl12"
+      >
+      <source src="./images/water_Trim.m4v" type="video/mp4" />
+    </video>
+    <main class="row">
+      <div id="home" class="home open">
+        <nav class="nav-wraper z-depth-0 transparent">
+          <ul row>
+            <li col s4 left>
+              <a
+              class="waves-effect waves-light btn-small about-button"
               >About</a
-            >
-          </li>
-          <li>
-            <a id="projects-button" class="nav-link border-radius_right shadow"
+              >
+            </li>
+            <li col s4 center>
+              <a
+              class="disabled waves-effect waves-light btn-small home-button"
+              >Home</a
+              >
+            </li>
+            <li col s4 right>
+              <a
+              class="waves-effect waves-light btn-small projects-button"
               >Projects</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="sections-container">
-        <h2>About</h2>
-        <div id="about" class="section-container show">
-          <section class="about-me shadow border">
-            <h3>My name is Carlo Costantino</h3>
+              >
+            </li>
+          </ul>
+        </nav>
+        <header>
+          <h1 class="title center">Aloha</h1>
+          <p class="flow-text center">
+            I’m Carlo. I’m a fullstack web engineer with a focus on
+            creative, front end development.
+          </p>
+        </header>
+      </div>
+      <aside id="about" class="left-drawer">
+        <section  id="left-drawer_section"class="container about-me shadow">
+          <nav id="left-drawer_nav" class="nav-wraper z-depth-0 transparent">
+            <ul row>
+                <li col s4 right>
+                  <a
+                    class="disabled waves-effect waves-light btn-small about-button"
+                    >About</a
+                  >
+                </li>
+                <li col s4 center>
+                  <a
+                  class="waves-effect waves-light btn-small home-button"
+                  >Home</a
+                  >
+                </li>
+                <li col s4 right>
+                  <a
+                  class="waves-effect waves-light btn-small projects-button"
+                  >Projects</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <h2>I am</h2>
+            <h3>The Front End Developer</h3>
             <p class="bio-text1">
-              I am a recent graduate of the Engineering Flex program at Thinkful
-              and avid tech enthusiast. Programming has become my life as I find
-              immense joy from solving problems and understanding new
-              technologies. The thrill of finding answers to questions drives me
-              to be continually learning and perfecting my skills as a software
-              engineer. I'm excited to work with a team of talented people that
-              can learn and tackle ambitious projects together.
+              I am a recent graduate of the Engineering Flex program at
+              Thinkful and avid tech enthusiast. Programming has become my
+              life as I find immense joy from solving problems and
+              understanding new technologies. The thrill of finding answers to
+              questions drives me to be continually learning and perfecting my
+              skills as a software engineer. I'm excited to work with a team
+              of talented people that can learn and tackle ambitious projects
+              together.
             </p>
             <p class="bio-text2">
               When I’m not coding, I am generally painting or hiking in the
-              wilderness. I love learning and often listen to podcasts about AI,
-              futurism, neuroscience and other existential topics.
+              wilderness. I love learning and often listen to podcasts about
+              AI, futurism, neuroscience and other existential topics.
             </p>
           </section>
-        </div>
-        <h2>Projects</h2>
-        <div id="projects" class="section-container hidden">
-          <section class="projects shadow">
-            <h3 class="project-name">Authentic</h3>
-            <div class="project-links">
-              <a
-                class="link shadow"
-                href="https://github.com/mr-dojo/ifeelthat-app"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                class="link shadow"
-                href="https://ifeelthat-app.now.sh/"
-                target="_blank"
-                >Live</a
-              >
-            </div>
-            <p class="project-description">
-              A place to identify ones emotions and express them in a healthy
-              way.<br />
-              This guides the user through a process of mindfulness and
-              introspection. After identifying the emotion they are feeling,
-              they can hear/read stories of others experiencing that emotion.
-              Then they are given the chance to express that emotion either in
-              text or audio.
-            </p>
-            <a
-              class="icon-link"
-              href="https://ifeelthat-app.now.sh/"
-              target="_blank"
-              ><img
-                class="project-img"
-                src="images/authentic-screenshot.JPG"
-                alt="Screenshot of Authentic app"
-            /></a>
-            <p class="project-tech">
-              Front-end:<br /><span>React.js</span><span>JavaScript ES6</span
-              ><span>CSS 3</span><span>HTML 5</span><span>Jest</span>
-            </p>
-            <p class="project-tech">
-              Back-end:<br /><span>Node.js</span><span>JavaScript ES6</span
-              ><span>Express</span><span>PostgreSQL</span><span>Mocha</span>
-            </p>
-          </section>
-          <section class="projects shadow">
-            <h3 class="project-name">Artlist</h3>
-            <div class="project-links">
-              <a
-                class="link shadow"
-                href="https://github.com/mr-dojo/artlist-app"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                class="link shadow"
-                href="https://artlist-app.now.sh/"
-                target="_blank"
-                >Live</a
-              >
-            </div>
-            <p class="project-description">
-              Artlist is a way for artists to organize their work. This app
-              allows you to create custom lists of art for yourself and clients.
-              Organize and sort your list with filters that include everything
-              from medium of the piece to its current location.
-            </p>
-            <a
-              class="icon-link"
-              href="https://artlist-app.now.sh/"
-              target="_blank"
-              ><img
-                class="project-img"
-                src="images/artlist-screenshot.JPG"
-                alt="Screenshot of Artlist app"
-            /></a>
-            <p class="project-tech">
-              Front-end:<br /><span>React.js</span><span>JavaScript ES6</span
-              ><span>CSS 3</span><span>HTML 5</span><span>Jest</span>
-            </p>
-            <p class="project-tech">
-              Back-end:<br /><span>Node.js</span><span>JavaScript ES6</span
-              ><span>Express</span><span>PostgreSQL</span><span>Mocha</span>
-            </p>
-          </section>
-          <section class="projects shadow">
-            <h3 class="project-name">Star Wars Quiz</h3>
-            <div class="project-links">
-              <a
-                class="link shadow"
-                href="https://github.com/mr-dojo/noob-jedi"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                class="link shadow"
-                href="https://mr-dojo.github.io/noob-jedi/"
-                target="_blank"
-                >Live</a
-              >
-            </div>
-            <p class="project-description">
-              This quiz app tests your knowledge of the Star Wars universe so
-              you can blow your friends away with useless factoids. It gives you
-              constructive feedback on your answers to help you get first place
-              at your all important trivia nights.
-            </p>
-            <a
-              class="icon-link"
-              href="https://mr-dojo.github.io/noob-jedi/"
-              target="_blank"
-              ><img
-                class="project-img"
-                src="images/starwars-quiz-screenshot.JPG"
-                alt="Star Wars text logo"
-            /></a>
-            <p class="project-tech">
-              Front-end:<br /><span>HTML 5</span><span>CSS 3</span
-              ><span>JavaScript</span>
-            </p>
-          </section>
-          <section class="projects shadow">
-            <h3 class="project-name">Balanced News</h3>
-            <div class="project-links">
-              <a
-                class="link shadow"
-                href="https://github.com/mr-dojo/point-of-view"
-                target="_blank"
-                >GitHub</a
-              >
-              <a
-                class="link shadow"
-                href="https://mr-dojo.github.io/point-of-view/"
-                target="_blank"
-                >Live</a
-              >
-            </div>
-            <p class="project-description">
-              This single-page news app uses the News API to find articles from
-              over 30,000 news sources and blogs; then utilize Google's Cloud
-              Natural Language API to analyze the description and article
-              preview. The app then decides if the author may have had bias
-              while writing the article.
-            </p>
-            <a
-              class="icon-link"
-              href="https://mr-dojo.github.io/point-of-view/"
-              target="_blank"
-              ><img
-                class="project-img"
-                src="images/BalancedNewsApp1.jpg"
-                alt="Star Wars text logo"
-            /></a>
-            <p class="project-tech">
-              Front-end:<br /><span>HTML 5</span><span>CSS 3</span
-              ><span>JavaScript</span><br /><span>News API</span
-              ><span>Cloud Natural Language API</span>
-            </p>
-          </section>
-        </div>
+        </aside>
+        <aside id="projects" class="right-drawer"></aside>
       </div>
     </main>
-
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
-
-    <footer id="footer" class="shadow">
-      <a class="icon-link" href="https://github.com/mr-dojo" target="_blank"
-        ><img class="icon" alt="GitHub logo" src="images/gitHubIcon.png"
+  </div>
+  
+  <footer id="footer" class="shadow row">
+    <a class="icon-link col s4 m4 l4 xl4" href="https://github.com/mr-dojo" target="_blank"
+    ><i class="icon" alt="GitHub logo" src="images/gitHubIcon.png"
+    /></a>
+    <a
+    id="contact"
+      class="icon-link col s4 m4 l4 xl4"
+      href="mailto:costantinoart@gmail.com"
+      target="_blank"
+      ><i class="icon" alt="mail icon" src="images/emailAddressLogo.png"
       /></a>
       <a
-        id="contact"
-        class="icon-link"
-        href="mailto:costantinoart@gmail.com"
-        target="_blank"
-        ><img class="icon" alt="mail icon" src="images/emailAddressLogo.png"
-      /></a>
-      <a
-        class="icon-link"
-        href="https://www.linkedin.com/in/carlo-costantino7/"
-        target="_blank"
-        ><img class="icon" alt="Linkedin logo" src="images/linkedinIcon.png"
+      class="icon-link col s4 m4 l4 xl4"
+      href="https://www.linkedin.com/in/carlo-costantino7/"
+      target="_blank"
+      ><i class="icon" alt="Linkedin logo" src="images/linkedinIcon.png"
       /></a>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="/main.js"></script>
   </body>
 </html>

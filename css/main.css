@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  max-width: 100vw;
+  width: 100%;
+}
+
+h1.title {
+  font-family: "bavroregular";
+  font-size: 7rem;
+  margin-top: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  width: 100%;
+}
+
+img {
+  border-radius: 5px;
+}
+
+a.btn-small.waves-effect.waves-light {
+  font-size: 0.8rem;
+  background-color: rgb(252, 110, 117);
+  width: 100px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+a.link.btn-small.shadow {
+  background-color: rgb(252, 110, 117);
+}
+
+.home {
+  position: fixed;
+  height: 100vh;
+  background-image: linear-gradient(rgba(22, 230, 230, 0.911), transparent);
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+  transform: translateY(-110%);
+  transition: transform 0.5s ease-in;
+}
+
+.home.open {
+  transform: translateY(0);
+}
+
+.left-drawer {
+  /* Moves scroll bar in about section to the left */
+  direction: rtl;
+
+  position: fixed;
+  height: 100vh;
+  background-image: linear-gradient(
+    -270deg,
+    rgba(44, 204, 204, 0.95),
+    rgba(44, 204, 204, 0.75)
+  );
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 200;
+  overflow-y: scroll;
+  transform: translateX(-110%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.left-drawer.open {
+  transform: translateX(0);
+}
+
+#left-drawer_section {
+  direction: ltr;
+}
+
+.right-drawer {
+  position: fixed;
+  height: 100vh;
+  background-image: linear-gradient(
+    -90deg,
+    rgba(23, 223, 206, 0.95),
+    rgba(23, 223, 206, 0.75)
+  );
+  box-shadow: -3px 0 15px rgba(0, 0, 0, 0.3);
+  top: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 200;
+  overflow-y: scroll;
+  transform: translateX(110%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.right-drawer.open {
+  transform: translateX(0);
+}
+
+#coverVideo {
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -100;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  overflow: hidden;
+  padding: 0;
+}

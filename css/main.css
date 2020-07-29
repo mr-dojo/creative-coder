@@ -2,6 +2,8 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
+  color: white;
+  text-shadow: 3px 0 15px rgba(0, 0, 0, 0.4);
 }
 
 main {
@@ -45,6 +47,82 @@ a.link.btn-small.shadow {
   background-color: rgb(252, 110, 117);
 }
 
+.about_info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.about_skills-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 150px;
+  padding: 10px 5px;
+}
+
+.about_skills-item h2 {
+  margin: 5px 0 0 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.about_skills-item p {
+  margin: 0px;
+  font-size: 0.9rem;
+}
+
+.about_skills-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  background-color: rgb(252, 110, 117);
+  border-radius: 60px;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.about_blurb-section {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.07));
+}
+
+.about_blurb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.about_blurb-item {
+  max-width: 600px;
+  width: 90%;
+}
+
+.about_blurb-item p {
+  font-size: 0.9rem;
+}
+
+.about_headshot {
+  background-image: url("../images/headshot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20px;
+  width: 90px;
+  height: 90px;
+  background-color: rgb(252, 110, 117);
+  border-radius: 60px;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
+}
+
 .home {
   position: fixed;
   height: 100vh;
@@ -85,7 +163,7 @@ a.link.btn-small.shadow {
   transform: translateX(0);
 }
 
-#left-drawer_section {
+#about {
   direction: ltr;
 }
 

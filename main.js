@@ -67,10 +67,7 @@ const renderProjects = () => {
 };
 
 const handleNavClick = () => {
-  console.log("handleNavClick ran");
-
   $().ready(function () {
-    console.log("listening for clicks");
     document.addEventListener(
       "click",
       function (event) {
@@ -88,7 +85,6 @@ const handleNavClick = () => {
         }
         // show home
         if (event.target.matches(".home-button")) {
-          $("#home").addClass("open");
           $("#about").removeClass("open");
           $("#projects").removeClass("open");
         }
@@ -107,12 +103,6 @@ function buildProjects(projects) {
             <a
               class="waves-effect waves-light btn-small about-button"
               >About</a
-            >
-          </li>
-          <li col s4 center>
-            <a
-              class="waves-effect waves-light btn-small home-button"
-              >Home</a
             >
           </li>
           <li col s4 right>

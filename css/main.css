@@ -111,18 +111,6 @@ a.link.btn-small.shadow {
   font-size: 0.9rem;
 }
 
-.about_headshot {
-  background-image: url("../images/headshot.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 20px;
-  width: 90px;
-  height: 90px;
-  background-color: rgb(252, 110, 117);
-  border-radius: 60px;
-  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
-}
-
 .home {
   position: fixed;
   height: 100vh;

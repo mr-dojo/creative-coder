@@ -72,7 +72,6 @@ const handleNavClick = () => {
       "click",
       function (event) {
         if (event.target.matches(".about-button")) {
-          console.log("removed class from home");
           $("#about").addClass("open");
           $("#projects").removeClass("open");
           $("#home").removeClass("open");
@@ -82,11 +81,6 @@ const handleNavClick = () => {
           $("#projects").addClass("open");
           $("#about").removeClass("open");
           $("#home").removeClass("open");
-        }
-        // show home
-        if (event.target.matches(".home-button")) {
-          $("#about").removeClass("open");
-          $("#projects").removeClass("open");
         }
       },
       false
@@ -98,14 +92,14 @@ function buildProjects(projects) {
   console.log("buildProjects ran");
   const projectSections = [
     `<section class="container"><nav class="nav-wraper transparent z-depth-0">
-        <ul row>
-          <li col s4 left>
+        <ul>
+          <li>
             <a
               class="waves-effect waves-light btn-small about-button"
               >About</a
             >
           </li>
-          <li col s4 right>
+          <li>
             <a
               class="disabled waves-effect waves-light btn-small projects-button"
               >Projects</a

@@ -17,6 +17,15 @@ h1.title {
   margin-top: 100px;
 }
 
+header h2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.07rem;
+}
+
+header h3 {
+  font-size: 1.5rem;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -35,16 +44,20 @@ img {
   border-radius: 5px;
 }
 
-a.btn-small.waves-effect.waves-light {
-  font-size: 0.8rem;
+.btn-small.waves-effect.waves-light {
+  font-size: 1rem;
   background-color: rgb(252, 110, 117);
-  width: 100px;
+  width: 120px;
   margin-right: 5px;
   margin-left: 5px;
 }
 
-a.link.btn-small.shadow {
+.link.btn-small.shadow {
   background-color: rgb(252, 110, 117);
+}
+
+.about_nav-ul {
+  direction: ltr;
 }
 
 .about_info-container {
@@ -93,6 +106,7 @@ a.link.btn-small.shadow {
 
 .about_blurb-section {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.07));
+  min-height: 60vh;
 }
 
 .about_blurb-container {
@@ -103,6 +117,7 @@ a.link.btn-small.shadow {
 }
 
 .about_blurb-item {
+  direction: ltr;
   max-width: 600px;
   width: 90%;
 }
@@ -128,8 +143,6 @@ a.link.btn-small.shadow {
 
 .left-drawer {
   /* Moves scroll bar in about section to the left */
-  direction: rtl;
-
   position: fixed;
   height: 100vh;
   background-image: linear-gradient(
@@ -152,7 +165,7 @@ a.link.btn-small.shadow {
 }
 
 #about {
-  direction: ltr;
+  direction: rtl;
 }
 
 .right-drawer {
